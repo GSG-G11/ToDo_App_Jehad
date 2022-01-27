@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #00cec9;
+}
+main {
+  background-color: white;
+  width: 800px;
+  min-height: 500px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777;
+}
+main nav h3 {
+  margin: 0;
+  font-family: cursive;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 12px;
+}
+main form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  caret-color: #00cec9;
+}
+main form input:focus::placeholder {
+  opacity: 0;
+}
+main .add-button {
+  border: none;
+  margin: 0px auto 22px;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: #ff7675;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+}
+main .tasks {
+  padding: 0 30px 50px;
+}
+main .tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 4px 0px #00000029;
+  background-color: #f8a5c22b;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+main .tasks .task .task-info {
+  font-family: sans-serif;
+  margin-right: 20px;
+}
+main .tasks .task .task-info .task-title {
+  margin: 0;
+  color: #2d3436;
+}
+main .tasks .task .task-info .task-description {
+  color: #636e72;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  max-width: 450px;
+}
+main .tasks .task .task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+main .tasks .task .task-actions .time {
+  color: #999;
+}
+main .tasks .task .task-actions .checkbox {
+  cursor: pointer;
+  border: 2px solid #0984e3;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+main .tasks .task .task-actions .checkbox > i {
+  color: #0984e3;
+  font-size: 13px;
+  margin-left: 1px;
+  display: block;
+  margin-top: 2px;
+}
+main .tasks .task .task-actions .edit {
+  color: #00b894;
+  cursor: pointer;
+}
+main .tasks .task .task-actions .delete {
+  cursor: pointer;
+  color: #d63031;
+}
+main .count-tasks {
+  display: inline-block;
+  background-color: #55efc4;
+  width: 90px;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-family: monospace;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
