@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ToDo App</title>
 </head>
 <body>
+    <main>
+        <nav>
+            <h3>ToDo List</h3>
+            <i class="fas fa-user-circle fa-3x avatar-icon"></i>
+        </nav>
+        <form action="">
+            <input type="text" id="task-title" class="task-title" placeholder="Task Title">
+            <input type="text" id="task-input" class="task-input" placeholder="Enter new ToDo task">
+            <input type="time" name="task-time" id="task-time" class="task-time">
+        </form>
+        <button type="submit" id="add-button" class="add-button" >Add Task</button>
+        <div class="tasks"></div>
+        <div class="count-tasks">Total: <span class="counter">0</span></div>
+    </main>
     <script src="js/main.js"></script>
 </body>
 </html>
